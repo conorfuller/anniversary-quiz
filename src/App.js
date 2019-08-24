@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import NavBar from './components/NavBar'
 import QuestionList from "./components/QuestionList";
 import Grid from "@material-ui/core/Grid";
@@ -17,16 +17,14 @@ class App extends Component {
     };
 
     render() {
-        if (this.state.girlfriendName) {
-            return (
-                <div>
-                    <NavBar name={this.state.girlfriendName}/>
-                    <QuestionList/>
-                </div>
-            )
-        } else {
-            return (
-                <div style={{marginLeft: '10px', marginTop: '16px'}}>
+        return (
+            <div>
+                {this.state.girlfriendName ? (
+                    <Fragment>
+                        <NavBar name={this.state.girlfriendName}/>
+                        <QuestionList/>
+                    </Fragment>
+                ) : (
                     <Grid
                         container
                         direction="column"
@@ -35,7 +33,7 @@ class App extends Component {
                         spacing={4}
                     >
                         <Grid item xs={12} sm={6} lg={4} xl={3}>
-                            <Card raised={true}>
+                            <Card raised={true} style={{marginTop: '16px', marginLeft: '10px'}}>
                                 <CardContent>
                                     <Typography component="p">
                                         Please enter current girlfriends name here:
@@ -63,11 +61,12 @@ class App extends Component {
                             </Card>
                         </Grid>
                     </Grid>
-                </div>
+                )
+                }
+            </div>
 
-            )
 
-        }
+        )
     }
 }
 
