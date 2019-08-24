@@ -41,7 +41,7 @@ const Results = (props) => {
                 <Typography component="p">
                     {getContent(props.correct, props.total)}
                 </Typography>
-            </CardContent>%
+            </CardContent>
             <CardActions>
                 <Button variant="contained" size="small" color="primary" onClick={() => {
                     window.location.reload();
