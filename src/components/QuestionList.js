@@ -25,29 +25,16 @@ class QuestionList extends Component {
 
     state = {
         questions: this.shuffle([
-            {description: 'Where did Samson get his name?', status: null},
-            {description: 'What is my Snapchat name?', status: null},
-            {description: "What's my mum's dads name?", status: null},
-            {description: 'What is my favourite band?', status: null},
-            {description: 'What are 3 things I like about you?', status: null},
-            {description: 'What are 3 things I dislike about you?', status: null},
-            {description: 'What is my favourite song in the whole wide world?', status: null},
-            {description: 'What was the name of my band?', status: null},
-            {description: 'Name 1 thing I would do if I won the lottery', status: null},
             {description: 'What is my favourite thing that you wear?', status: null},
-            {description: 'Describe my morning routine', status: null},
-            {
-                description: "True or false - at uni I had to visit the head's office 3 times for getting in trouble",
-                status: null
-            },
-            {description: 'Who said I love you first?', status: null},
-            {description: 'If I had to pick a best man right now, who would it be?', status: null},
-            {description: 'If I could go anywhere in the world right now, where would it be?', status: null},
             {description: 'Name a belonging of yours that I would get rid of if I could', status: null},
-            {description: 'What was I wearing on our first date?', status: null},
-            {description: 'How many holidays have we been on together? (Non UK)', status: null},
-            {description: 'How many holidays have we been on together? (Non UK)', status: null},
-            {description: 'What is my favourite colour?', status: null}
+            {description: 'What was the first instrument I learnt to play?', status: null},
+            {description: 'Who came up with the name Jonah?', status: null},
+            {description: 'What’s the nickname my parents used to call me?', status: null},
+            {description: 'Name 5 foods I don’t like', status: null},
+            {description: 'Name 5 bands/musicians I like', status: null},
+            {description: 'What are my 3 favourite things about you?', status: null},
+            {description: 'What are my 3 least favourite things about you?', status: null},
+            {description: 'Name 3 things I’m afraid of', status: null},
         ]),
         correctQuestions: 0,
         incorrectQuestions: 0

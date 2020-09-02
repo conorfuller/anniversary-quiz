@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 const Results = (props) => {
 
     const getContent = (correct, total) => {
-        if (correct >= 15) {
+        if (correct >= 7) {
             return (
                 <div>
                     You got {props.correct} out of {total} correct. You are a:
@@ -16,7 +16,7 @@ const Results = (props) => {
                     I'll keep you a bit longer
                 </div>
             )
-        } else if (correct >= 10 && correct < 15) {
+        } else if (correct >= 5 && correct < 7) {
             return (
                 <div>
                     You got {correct} out of {total} correct. You are a:
